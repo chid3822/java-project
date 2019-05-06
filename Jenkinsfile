@@ -11,7 +11,7 @@ node('linux'){
     }
     
     stage('Deoply'){
-        sh "aws s3 cp rectangle-${env.BUILD_NUMBER}.jar s3://chid3822-assignment-4/"
+        sh "aws s3 cp build.xml/rectangle-${env.BUILD_NUMBER}.jar s3://chid3822-assignment-4/"
     }
     
     stage('Report'){
