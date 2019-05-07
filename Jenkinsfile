@@ -11,7 +11,7 @@ node('linux'){
     }
     
     stage('Deoply'){
-        sh "cp /build.xml/rectangle-${env.BUILD_NUMBER}.jar /s3bucket.jar"
+        sh "cp https://github.com/chid3822/java-project/blob/master/build.xml/rectangle-${env.BUILD_NUMBER}.jar https://s3.console.aws.amazon.com/s3/buckets/chid3822-assignment-4/
     }
     
     stage('Report'){
