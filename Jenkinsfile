@@ -11,7 +11,7 @@ node('linux'){
     }
     
     stage('Deoply'){
-        sh "cp build.xml/rectangle-${env.BUILD_NUMBER}.jar /s3bucket.jar"
+        sh "cp /build.xml/rectangle-${env.BUILD_NUMBER}.jar /s3bucket.jar"
     }
     
     stage('Report'){
